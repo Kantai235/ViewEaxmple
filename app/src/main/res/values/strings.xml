@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ViewEaxmple</string>
+
+    <string name="main_button_autoCompleteTextViewtext">AutoComplete TextView Demo</string>
+    <string name="main_button_draw2d">Draw2D Demo</string>
+    <string name="main_button_frameAnimation">FrameAnimation Demo</string>
+    <string name="main_button_gridView">GridView Demo</string>
+    <string name="main_button_listView">ListView Demo</string>
+    <string name="main_button_recyclerCardView">RecyclerCardView Demo</string>
+    <string name="main_button_spinner">Spinner Demo</string>
+    <string name="main_button_tweenAnimation">TweenAnimation Demo</string>
+
+</resources>
