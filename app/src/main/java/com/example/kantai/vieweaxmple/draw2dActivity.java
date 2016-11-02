@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.support.annotation.NonNull;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.support.v7.widget.AppCompatSeekBar;
 import android.util.AttributeSet;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.SeekBar;
@@ -25,6 +27,11 @@ public class draw2dActivity extends AppCompatActivity implements SeekBar.OnSeekB
     /**
      * 在新建 Draw2D 畫布時，必須注意這個地方：
      * <專案名.畫布名稱 ... />
+     */
+
+    /**
+     * 這裡的東西是採用 SlackLoadingView 這東西：
+     * https://github.com/JeasonWong/SlackLoadingView
      */
 
     private SlackLoadingView mLoadingView;
@@ -77,28 +84,16 @@ public class draw2dActivity extends AppCompatActivity implements SeekBar.OnSeekB
 
     }
 
-}
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
-//class GeometricView extends View {
-//    private int offset = 0;
-//    private Paint paint = new Paint();
-//
-//    public GeometricView(Context context) {
-//        super(context);
-//    }
-//
-//    public GeometricView(Context context, AttributeSet attrs) {
-//        super(context, attrs);
-//    }
-//
-//    public void setOffset(int offset) {
-//        this.offset = offset;
-//    }
-//
-//    @Override
-//    protected void onDraw(Canvas canvas) {
-//    }
-//}
+}
 
 class SlackLoadingView extends View {
 

@@ -16,7 +16,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".autoCompleteTextViewActivity" />
-        <activity android:name=".draw2dActivity"></activity>
+        <activity android:name=".draw2dActivity" />
+        <activity android:name=".frameAnimationActivity" />
+        <activity android:name=".listViewActivity" />
+        <activity android:name=".recyclerCardViewActivity" />
+        <activity android:name=".spinnerActivity" />
+        <activity android:name=".tweenAnimationActivity" />
+        <activity android:name=".gridViewActivity"></activity>
     </application>
 
 </manifest>

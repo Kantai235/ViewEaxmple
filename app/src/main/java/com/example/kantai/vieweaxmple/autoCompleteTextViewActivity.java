@@ -1,7 +1,9 @@
 package com.example.kantai.vieweaxmple;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -54,11 +56,11 @@ public class autoCompleteTextViewActivity extends AppCompatActivity {
         if (editText.isEmpty()) {
             // 利用吐司訊息告知
             Toast.makeText(this, "內容不得為空。", Toast.LENGTH_SHORT).show();
-        // 利用 checkData() 來確認輸入的內容是否重複
+            // 利用 checkData() 來確認輸入的內容是否重複
         } else if (this.checkData(editText)) {
             // 利用吐司訊息告知
             Toast.makeText(this, editText + " 這個內容已經存在了。", Toast.LENGTH_SHORT).show();
-        // 如果輸入的內容不為空，且不重複
+            // 如果輸入的內容不為空，且不重複
         } else {
             // 在 全域 ArrayList<String> 新增資料
             this.countries.add(editText);
@@ -95,6 +97,15 @@ public class autoCompleteTextViewActivity extends AppCompatActivity {
         }
         // 回傳 false
         return false;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }

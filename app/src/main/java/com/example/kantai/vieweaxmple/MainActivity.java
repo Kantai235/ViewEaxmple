@@ -7,6 +7,14 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * 講義：
+     * http://epaper.gotop.com.tw/PDFSample/AEL016331.pdf
+     *
+     * 採用：
+     * https://github.com/Bearded-Hen/Android-Bootstrap
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,28 +40,40 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             // 如果這個 R.id 是 R.id.main_button_framAnimation
-//            case R.id.main_button_framAnimation:
-//                break;
+            case R.id.main_button_framAnimation:
+                // 賦予 Intent(意圖) 事件的起始地、目的地
+                intent.setClass(this, frameAnimationActivity.class);
+                break;
 
             // 如果這個 R.id 是 R.id.main_button_gridView
-//            case R.id.main_button_gridView:
-//                break;
+            case R.id.main_button_gridView:
+                // 賦予 Intent(意圖) 事件的起始地、目的地
+                intent.setClass(this, gridViewActivity.class);
+                break;
 
             // 如果這個 R.id 是 R.id.main_button_listView
-//            case R.id.main_button_listView:
-//                break;
+            case R.id.main_button_listView:
+                // 賦予 Intent(意圖) 事件的起始地、目的地
+                intent.setClass(this, listViewActivity.class);
+                break;
 
             // 如果這個 R.id 是 R.id.main_button_recyclerCardView
-//            case R.id.main_button_recyclerCardView:
-//                break;
+            case R.id.main_button_recyclerCardView:
+                // 賦予 Intent(意圖) 事件的起始地、目的地
+                intent.setClass(this, recyclerCardViewActivity.class);
+                break;
 
             // 如果這個 R.id 是 R.id.main_button_spinner
-//            case R.id.main_button_spinner:
-//                break;
+            case R.id.main_button_spinner:
+                // 賦予 Intent(意圖) 事件的起始地、目的地
+                intent.setClass(this, spinnerActivity.class);
+                break;
 
             // 如果這個 R.id 是 R.id.main_button_tweenAnimation
-//            case R.id.main_button_tweenAnimation:
-//                break;
+            case R.id.main_button_tweenAnimation:
+                // 賦予 Intent(意圖) 事件的起始地、目的地
+                intent.setClass(this, tweenAnimationActivity.class);
+                break;
 
             // 如果這個 R.id 都不是以上的種類
             default:
