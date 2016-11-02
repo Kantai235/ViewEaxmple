@@ -93,7 +93,7 @@ public void main_Button_Click(View view) {
 
 ### AutoComplete TextView (自動建議的 EditText)
 
-![activity_autoCompleteTextView](images/autoCompleteTextView.png "activity_autoCompleteTextView")
+![activity_autoCompleteTextView](images/activity_autoCompleteTextView.png "activity_autoCompleteTextView")
 
 首先要有個 AutoCompleteTextView，再來我想要在這裡面輸入內容，按下 OK Button(按鈕)後，把資料儲存到程式當中，方便我下一次取值，所以在頁面的部分我們需要一個 AutoCompleteTextView 以及一個 Button。
 
