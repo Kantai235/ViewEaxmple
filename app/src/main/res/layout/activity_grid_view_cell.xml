@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bootstrap_gray_dark"
+    android:orientation="vertical">
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/bootstrap_gray"
+        app:bootstrapSize="lg"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                android:id="@+id/activity_list_view_cell_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bootstrap_gray_dark"
+                android:backgroundTint="@color/bootstrap_alert_cross_default"
+                android:src="@mipmap/ic_launcher"
+                app:bootstrapBrand="danger"
+                app:hasBorder="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/activity_list_view_cell_arg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Arg"
+                android:textColor="@color/bootstrap_brand_secondary_fill"
+                android:layout_weight="1"
+                android:layout_margin="2dp" />
+
+            <com.beardedhen.androidbootstrap.BootstrapWell
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_gray_light"
+                app:bootstrapSize="lg">
+
+                <TextView
+                    android:id="@+id/activity_list_view_cell_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Name"
+                    android:textColor="@color/bootstrap_brand_secondary_fill" />
+            </com.beardedhen.androidbootstrap.BootstrapWell>
+
+        </LinearLayout>
+
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+</LinearLayout>

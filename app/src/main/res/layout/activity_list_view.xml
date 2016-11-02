@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_frame_animation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bootstrap_gray_dark"
@@ -13,8 +12,9 @@
     tools:context="com.example.kantai.vieweaxmple.listViewActivity">
 
     <ListView
+        android:id="@+id/activity_list_view_listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 </RelativeLayout>

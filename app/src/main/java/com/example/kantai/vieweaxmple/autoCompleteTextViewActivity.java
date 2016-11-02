@@ -46,7 +46,7 @@ public class autoCompleteTextViewActivity extends AppCompatActivity {
         });
     }
 
-    //
+    // OK Button(按鈕)被點擊的事件
     public void autoCompleteTextView_Button_Click(View view) {
         // 取得 AutoCompleteTextView 輸入框的內容
         String editText = this.textView.getText().toString();
